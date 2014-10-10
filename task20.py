@@ -33,8 +33,8 @@ def what_is_my_sign(day, month):
 	num = month + (day / 100.0)
 
 	for i in arr:
-		if num > i[1] and num < i[2]:
+		if num >= i[1] and num <= i[2]:
 			return i[0]
 
 
-print (what_is_my_sign(29, 1))
+print (what_is_my_sign(21, 4))
